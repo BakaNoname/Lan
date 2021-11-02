@@ -1,3 +1,54 @@
+//TÌM KIẾM TUYẾN TÍNH
+const object=[
+    {
+        name:'a',
+        age:23,
+    },
+    {
+        name:'b',
+        age:20,
+    },
+    {
+        name:'c',
+        age:18,
+    },
+    {
+        name:'d',
+        age:27,
+    },
+]
+for(let i=0;i<object.length;i++){
+    let x=object[i];
+    if(x.age===20){
+        console.log(x);
+    }
+}
+
+//SẮP XẾP NỔI BỌT
+// let swapped=false;
+// do{
+//     swapped=false;
+//     for(let i=0;i<object.length-1;i++){
+//         if(object[i].age>object[i+1].age){
+//             let min=object[i];
+//             object[i]=object[i+1];
+//             object[i+1]=min;
+//         swapped=true;
+//         }
+//     }
+// }while(swapped)
+// console.log(object)
+for(let i=0;i<object.length;i++)
+    for(let j=0;j<object.length-1;j++){
+    let min=object[i];
+    if(min.age<object[j].age){
+        min=object[j];
+        object[j]=object[i];
+        object[i]=min;
+    }
+}
+console.log(object)
+
 //GIẢI PT BẬC HAI
 const PT={
     a: parseInt(prompt("Mời nhập a:")),
