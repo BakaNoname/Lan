@@ -3,22 +3,26 @@ const sinhvien = [
         name: 'Nam',
         age: 20,
         address: 'Hà Nội',
+        location: 'North',
         score: 25.5,
     },
     {
         name: 'Hà',
         age: 19,
         address: 'Kiên Giang',
+        location: 'South',
         score: 30,
     }, {
         name: 'Minh',
         age: 25,
-        address: 'Ninh Bình',
+        address: 'Đà Nẵng',
+        location: 'Central',
         score: 20,
     }, {
         name: 'Kiên',
         age: 18,
         address: 'Hà Nội',
+        location: 'North',
         score: 27,
     },
 ]
@@ -76,6 +80,11 @@ for(let i=1;i<sinhvien.length-1;i++){
 console.log(second_age)
 
 // TÌM RA CÁC BẠN CÓ ADDRESS TẠI MIỀN BẮC
+for (let i = 0; i < sinhvien.length; i++) {
+    if (sinhvien[i].location === 'North') {
+        console.log(sinhvien[i]);
+    }
+}
 
 // TÌM RA CÁC BẠN CÓ AGE>24
 for(let i=0;i<sinhvien.length;i++){
