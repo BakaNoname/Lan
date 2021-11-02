@@ -40,11 +40,10 @@ for(let i=0;i<object.length;i++){
 // console.log(object)
 for(let i=0;i<object.length;i++)
     for(let j=0;j<object.length-1;j++){
-    let min=object[i];
-    if(min.age<object[j].age){
-        min=object[j];
-        object[j]=object[i];
-        object[i]=min;
+    if(object[i].age<object[j].age){
+        let max=object[i];
+        object[i]=object[j];
+        object[j]=max;
     }
 }
 console.log(object)
@@ -82,33 +81,3 @@ else{
         console.log("Phương trình có 2 nghiệm phân biệt x1,x2= ",x1,x2);
     }
 }
-
-//BT VỀ SINH VIÊN
-const sinhvien=[
-    {
-        name: 'Nam',
-        age: 20,
-        address: 'Hà Nội',
-        score: 25.5,
-    },
-    {
-        name: 'Hà',
-        age: 19,
-        address: 'Kiên Giang',
-        score: 30,
-    },{
-        name: 'Minh',
-        age: 22,
-        address: 'Ninh Bình',
-        score: 20,
-    },{
-        name: 'Kiên',
-        age: 18,
-        address: 'Hà Nội',
-        score: 27,
-    },
-]
-//TÌM NGƯỜI CÓ SỐ TUỔI LỚN NHẤT
-//TÌM NGƯỜI CÓ ĐỊA CHỈ Ở HÀ NỘI
-//TÌM NGƯỜI CÓ SỐ ĐIỂM ĐẦU VÀO CAO NHẤT
-//SẮP XẾP THEO TÊN GIẢM DẦN
