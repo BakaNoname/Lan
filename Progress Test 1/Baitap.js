@@ -1,26 +1,32 @@
 //BÀI 1
-const input=prompt("Mời nhập chuỗi ký tự bất kỳ");
-console.log("Chuỗi trước khi sắp xếp: ",input);
-[...input];
-for(let i=0;i<input.length;i++)
-    for(let j=0;j<input.length-1;j++){
-        
+let input1=prompt("Mời nhập chuỗi ký tự bất kỳ");
+console.log("Chuỗi trước khi sắp xếp: ",input1);
+const arr1=[...input1];
+for(let i=0;i<arr1.length-1;i++)
+    for(let j=0;j<arr1.length-2;j++){
+        let temp=arr1[i];
+        arr1[i]=arr1[j];
+        arr1[j]=temp;
 }
-console.log("Chuỗi sau khi sắp xếp: ",input);
+console.log("Chuỗi sau khi sắp xếp: ",arr1.join(''));
 
 //BÀI 2
+let input2=prompt("Mời nhập chuỗi ký tự bất kỳ");
+const arr2=[...input3];
+
 
 //BÀI 3
-const array=prompt("Mời nhập chuỗi ký tự bất kỳ");
-[...array];
-console.log("Mảng trước khi sắp xếp: ",array);
-for(let i=0;i<array.length;i++)
-    for(let j=0;j<array.length-1;j++){
-        if(array[i]===array[j]){
-            array[j].slice(0,1)
+let input3=prompt("Mời nhập chuỗi ký tự bất kỳ");
+console.log("Mảng trước khi sắp xếp: ",input3);
+const arr3=[...input3];
+for(let i=0;i<arr3.length;i++)
+    for(let j=1;j<arr3.length;j++){
+        if(arr3[i]===arr3[j]){
+            arr3[j].slice(0,1);
         }
 }
-console.log("Mảng sau khi sắp xếp: ",array);
+console.log("Mảng sau khi sắp xếp: ",arr3.join(''));
+
 //BÀI 4
 const nv_MindX=[
     {
@@ -53,13 +59,18 @@ nv_MindX.push({
 })
 console.log({nv_MindX});
 console.log('--- UPDATE ---');
-if(nv_MindX.name==='b'){
-    nv_MindX.age= 30;
+for (let index = 0; index < nv_MindX.length; index++) {
+    if(nv_MindX[index].name==='b'){
+        nv_MindX[index].age= 30;
+    }
 }
 console.log({nv_MindX});
 console.log('--- DELETE ---');
-if(nv_MindX.name==='a'){
-    delete nv_MindX[0];
+for (let index = 0; index < nv_MindX.length; index++) {
+    if(nv_MindX[index].name==='a'){
+        delete nv_MindX[index];
+    }
 }
 console.log({nv_MindX});
+
 //BÀI 5
