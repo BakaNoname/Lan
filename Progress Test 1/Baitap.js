@@ -20,9 +20,9 @@ let input3=prompt("Mời nhập chuỗi ký tự bất kỳ");
 console.log("Mảng trước khi sắp xếp: ",input3);
 const arr3=[...input3];
 for(let i=0;i<arr3.length;i++)
-    for(let j=1;j<arr3.length;j++){
+    for(let j=0;j<arr3.length;j++){
         if(arr3[i]===arr3[j]){
-            arr3[j].slice(0,1);
+            arr3.splice([],1);
         }
 }
 console.log("Mảng sau khi sắp xếp: ",arr3.join(''));
@@ -74,3 +74,32 @@ for (let index = 0; index < nv_MindX.length; index++) {
 console.log({nv_MindX});
 
 //BÀI 5
+let a=parseInt(prompt("Mời nhập ngày"));
+let b=parseInt(prompt("Mời nhập tháng"));
+let c=parseInt(prompt("Mời nhập năm"));
+if(b===1||b===3||b===5||b===7||b===8||b===10||b===12){
+    if(1<=a<=31){
+        console.log(`${a}/${b}/${c} là ngày hợp lệ`);
+    }
+}
+else if(b===4||b===6||b===9||b===11){
+    if(1<=a<=30){
+        console.log(`${a}/${b}/${c} là ngày hợp lệ`);
+    }
+}
+else if(b===2){
+    if(1<=a<=29){
+        if(c%400===0){
+            console.log(`${a}/${b}/${c} là ngày hợp lệ`);
+        }
+        else if(1<=a<=28){
+            console.log(`${a}/${b}/${c} là ngày hợp lệ`);
+        }
+        else{
+            console.log(`${a}/${b}/${c} là ngày không hợp lệ`);
+        }
+    }
+}
+else{
+    console.log(`${a}/${b}/${c} là ngày không hợp lệ`);
+}
