@@ -1,8 +1,8 @@
 //BT1
-let array=[1,2,'hai',3,'năm'];
+let array1=[1,2,'hai',3,'năm'];
 let a=prompt("Mời nhập 1 giá trị bất kỳ"); 
-for(let i=0;i<array.length;i++){
-    if(a===array[i]){
+for(let i=0;i<array1.length;i++){
+    if(a===array1[i]){
         console.log(true);
         break;
     }
@@ -12,15 +12,20 @@ for(let i=0;i<array.length;i++){
 }
 
 //BT2
-let array=[];
+let array2=[];
 for(let i=0;i<5;i++){
     let a=prompt("Mời nhập 1 giá trị bất kỳ");
-    array.push(a);
+    array2.push(a);
 }
-for(let i=0;i<array.length;i++){
-    i++;
-    if(array[i]>array[i++]){
-        array[i]=array[i++];
+console.log("---Mảng trước khi sắp xếp---");
+console.log(array2);
+for(let i=0;i<array2.length;i++)
+    for(let j=0;j<array2.length-1;j++){
+    if(array2[i]>array2[j]){
+        let temp=array2[i];
+        array2[i]=array2[j];
+        array2[j]=temp;
     }
 }
-console.log(array)
+console.log("---Mảng sau khi sắp xếp---");
+console.log(array2)

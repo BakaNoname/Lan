@@ -1,3 +1,4 @@
+//BT 1
 let a=parseInt(prompt("Mời nhập A"));
 let b=parseInt(prompt("Mời nhập B"));
 let c=parseInt(prompt("Mời nhập C"));
@@ -27,3 +28,13 @@ else{
         console.log("Phương trình vô nghiệm");
     }
 }
+
+//BT 2
+let Tong=0;
+let i=0;
+do{
+    Tong=Tong+i;
+    i++;
+}while(i<100);
+let TBC=Tong/i;
+console.log(TBC);
