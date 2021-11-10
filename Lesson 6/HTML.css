@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Mulish:wght@300;400;500&display=swap');
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Mulish', sans-serif;
+    margin-left: 184px;
+    margin-right: 184px;
+
+}
+
+#Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header_first{
+    object-fit: cover;
+    height: 50px;
+    width: auto;
+}
+
+.Header_second>div{
+    color: #19191B;
+}
+
+.Header_second{
+    font-family: 'DM Sans', sans-serif;
+    width: 327px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.Header_third{
+    padding: 19px 56px;
+    background: #FF7143;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    border: 0;
+    font-size: 17px; 
+}
+
+#Main-content1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Main-content1_left{
+    margin-top: 150px;
+}
+
+.Headline1{
+    width: 462px;
+    height: 231px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 80px;
+    color: #19191B;
+    letter-spacing: -2.5px;
+    line-height: 77px;
+}
+
+.Describe1{
+    Width: 462px;
+    height: 90px;
+    color: #696871;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Mulish', sans-serif;
+    margin-top: 30px;
+}
+
+.Action{
+    width: 300px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.Main-content1_left>.Action>button{
+    padding: 19px 56px;
+    background: #5454D4;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    border: 0;
+    font-size: 17px; 
+}
+
+
+.Main-content1_right{
+    width: 610px;
+    height: 644px;
+    margin-top: 80px;
+}
+
+.Main-content1_Group{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.Logo1{
+    width: 120px;
+    height: 30px;
+}
+.Logo2{
+    width: 125px;
+    height: 30px;
+}
+.Logo3{
+    width: 100px;
+    height: 50px;
+}
+.Logo4{
+    width: 120px;
+    height: 25px;
+}
+.Logo5{
+    width: 130px;
+    height: 30px;
+}
