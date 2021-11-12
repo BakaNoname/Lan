@@ -40,12 +40,11 @@ body{
     color: white;
     outline: none;
     border: 0;
-    font-size: 17px; 
+    font-size: 17px;
 }
 
 #Main-content1{
     display: flex;
-    justify-content: space-between;
 }
 
 .Main-content1_left{
@@ -53,8 +52,9 @@ body{
 }
 
 .Headline1{
-    width: 462px;
-    height: 231px;
+    object-fit: cover;
+    width: auto;
+    height: 230px;
     font-family: 'DM Sans', sans-serif;
     font-size: 80px;
     color: #19191B;
@@ -63,7 +63,7 @@ body{
 }
 
 .Describe1{
-    Width: 462px;
+    Width: 460px;
     height: 90px;
     color: #696871;
     font-size: 20px;
@@ -72,7 +72,7 @@ body{
     margin-top: 30px;
 }
 
-.Action{
+.Action1{
     width: 300px;
     margin-top: 50px;
     display: flex;
@@ -80,7 +80,7 @@ body{
     align-content: center;
 }
 
-.Main-content1_left>.Action>button{
+.Main-content1_left>.Action1>button{
     padding: 19px 56px;
     background: #5454D4;
     border-radius: 10px;
@@ -92,12 +92,14 @@ body{
 
 
 .Main-content1_right{
-    width: 610px;
-    height: 644px;
+    object-fit: cover;
+    width: auto;
+    height: 640px;
     margin-top: 80px;
+    margin-left: 160px;
 }
 
-.Main-content1_Group{
+#Main-content1_Group{
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
@@ -123,4 +125,438 @@ body{
 .Logo5{
     width: 130px;
     height: 30px;
+}
+
+#Main-content2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Main-content2_left{
+    margin-top: 150px;
+    object-fit: cover;
+    width: auto;
+    height: 470px;
+}
+
+.Main-content2_right{
+    margin-top: 280px;
+    width: 556px;
+    height: 230px;
+}
+
+.Headline2{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 50px;
+    line-height: 57px;
+    letter-spacing: -1.5px;
+    color: #19191B;
+}
+
+.Describe2{
+    margin-top: 20px;
+    Width: 459px;
+    Height: 90px;
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.625263px;
+    color: #696871;
+}
+
+.Action2{
+    margin-top: 30px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: -0.531474px; 
+    color: #5454D4;  
+}
+
+#Main-content3{
+    display: flex;
+}
+
+.Main-content3_left{
+    margin-top: 250px;
+    width: 400px;
+    height: 200px;
+}
+
+.Headline3{
+    font-family: 'DMSans',sans-serif;
+    font-size: 50px;
+    line-height: 57px;
+    letter-spacing: -1.56316px;
+    color: #19191B;
+}
+
+.Describe3{
+    width: 450px;
+    height: 60px;
+    margin-top: 20px;
+    font-family: 'Mulish',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.625263px;
+    color: #696871
+}
+
+.Main-content3_right{
+    margin-top: 80px;
+    margin-left: 290px;
+}
+
+.Action3{
+    margin-top: 30px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: -0.531474px; 
+    color: #5454D4;  
+}
+
+#Main-content3_under{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Left{
+    width: 300px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Main-content3_under>.Left>.Headline{
+    font-family: 'DMSans',sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.750316px;
+    color: #19191B;
+}
+
+#Main-content3_under>.Left>.Describe{
+    display: flex;
+    justify-content: center;
+    font-family: 'Mulish',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.500211px;
+    color: #696871;
+}
+
+.Center{
+    width: 300px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Main-content3_under>.Center>.Headline{
+    font-family: 'DMSans',sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.750316px;
+    color: #19191B;
+}
+
+#Main-content3_under>.Center>.Describe{
+    display: flex;
+    justify-content: center;
+    font-family: 'Mulish',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.500211px;
+    color: #696871;
+}
+
+.Right{
+    width: 300px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Main-content3_under>.Right>.Headline{
+    font-family: 'DMSans',sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.750316px;
+    color: #19191B;
+}
+
+#Main-content3_under>.Right>.Describe{
+    display: flex;
+    justify-content: center;
+    font-family: 'Mulish',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.500211px;
+    color: #696871;
+}
+
+#Footer{
+    margin-top: 120px;
+}
+
+.Footer1{
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Footer1>.Left{
+    width: 500px;
+    font-family: 'DMSans',sans-serif;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1.87579px;
+    color: #19191B;
+}
+
+.Footer1>.Right{
+    width: 340px;
+    height: 65px;
+    flex-direction: row;
+    background: #F7F7FB;
+    border-radius: 10px;
+}
+
+.Footer1>.Right>.Y-B{
+    width: 160px;
+    height: 55px;
+    background: #5454D4;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.Year{
+    width: 145px;
+    font-family: 'DMSans',sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.500211px;
+    color: #FFFFFF;
+    padding: 18px 7px 16px 8px;
+}
+
+.Month{
+    width: 175px;
+    font-family: 'DMSans',sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.500211px; 
+    color: #19191B;
+}
+
+.Footer2{
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Footer2>.Left{
+    justify-content: space-around;
+    width: 330px;
+    height: 440px;
+    background: #F8F8F8;
+    border-radius: 10px;
+}
+
+.Footer2>.Left>.Vip1{
+    font-family: 'DMSans',sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.562737px;
+    color: #696871;
+}
+
+.Footer2>.Left>.Price1{
+    font-family: 'DMSans',sans-serif;
+    font-size: 60px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -1.03448px;
+    color: #1D293F;
+}
+
+.Footer2>.Left>.Describe1{
+    object-fit: cover;
+    height: 150px;
+    width: auto;
+    margin-top: 0%;
+    font-family: 'Mulish',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: -0.531474px;
+    color: #696871;
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer2>.Left>.Action1{
+    width: 300px;
+    margin-top: 0%;
+    padding: 19px 42px;
+    background: #FFFFFF;
+    border: 1px solid #EAE9F2;
+    border-radius: 10px;
+    font-family: 'DMSans',sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.531474px;
+    color: #5454D4;
+    display: inline;
+}
+
+.Footer2>.Center{
+    justify-content: space-around;
+    width: 370px;
+    height: 470px;
+    background: #FF7143;
+    box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.317827);
+    border-radius: 10px;
+}
+
+.Footer2>.Center>.Vip2{
+    font-family: 'DMSans',sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.562737px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.Footer2>.Center>.Price2{
+    font-family: 'DMSans',sans-serif;
+    font-size: 60px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -1.03448px;
+    color: #FFFFFF;
+}
+
+.Footer2>.Center>.Describe2{
+    object-fit: cover;
+    height: 150px;
+    width: auto;
+    margin-top: 0%;
+    font-family: 'Mulish',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: -0.531474px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer2>.Center>.Action2{
+    width: 300px;
+    margin-top: 0%;
+    padding: 19px 42px;
+    background: #9F3919;
+    border-radius: 10px;
+    font-family: 'DMSans',sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.531474px;
+    color: #FFFFFF;
+    display: inline;
+}
+
+.Footer2>.Right{
+    justify-content: space-around;
+    width: 330px;
+    height: 440px;
+    background: #F8F8F8;
+    border-radius: 10px;
+}
+
+.Footer2>.Right>.Vip3{
+    font-family: 'DMSans',sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.562737px;
+    color: #696871;
+}
+
+.Footer2>.Right>.Price3{
+    font-family: 'DMSans',sans-serif;
+    font-size: 60px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -1.03448px;
+    color: #1D293F;
+}
+
+.Footer2>.Right>.Describe3{
+    object-fit: cover;
+    height: 150px;
+    width: auto;
+    margin-top: 0%;
+    font-family: 'Mulish',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: -0.531474px;
+    color: #696871;
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer2>.Right>.Action3{
+    width: 300px;
+    margin-top: 0%;
+    padding: 19px 42px;
+    background: #FFFFFF;
+    border: 1px solid #EAE9F2;
+    border-radius: 10px;
+    font-family: 'DMSans',sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.531474px;
+    color: #5454D4;
+    display: inline;
 }
