@@ -4,12 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./DOM.css">
+    <title>Lesson 7</title>
 </head>
 <body>
-    <h1>'Mời nhập thông tin các học viên'</h1>
-    <input class="Nhap" type="text">
+    <h1>STUDENT INFORMATION</h1>
 
-    <script src="./DOM.html"></script>
+    <section id="Input">
+        <div class="Information">
+            <div>Name:</div>
+            <div>Age:</div>
+            <div>Address:</div>
+        </div>
+        <div class="Ip1">
+            <div><input type="text" class="Ip-name" placeholder="Mời nhập tên sinh viên"></div>
+            <div><input type="text" class="Ip-age" placeholder="Mời nhập tuổi sinh viên"></div>
+            <div><input type="text" class="Ip-address" placeholder="Mời nhập địa chỉ sinh viên"></div>
+        </div>
+        <div class="Action">
+            <button class="Add">Add new student information</button>
+            <button class="Menu">Information list</button>
+        </div>
+        
+    </section>
+
+    <section id="Quest">
+        <div class="Ip2">
+            <input type="text" class="Find-name" placeholder="Mời nhập tên cần tìm">
+            <input type="text" class="Find-age" placeholder="Mời nhập tuổi cần tìm">
+            <input type="text" class="Find-address" placeholder="Mời nhập địa chỉ cần tìm"> 
+        </div>
+        <div class="Find">
+            <button class="Find-by-name">Find by Name </button>
+            <button class="Find-by-age">Find by Age</button>
+            <button class="Find-by-address">Find by Address</button>
+        </div>
+        <div class="stInfo" >Result:</div>
+    </section>
+    <script src="./DOM.js"></script>
 </body>
 </html>
