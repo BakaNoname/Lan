@@ -15,7 +15,7 @@ const search_address= document.querySelector(".Search-by-address");
 const input= document.querySelector(".Ip2");
 input.style.display="none";
 
-const table= document.getElementById("stInfo");
+const table= document.getElementById("tbody")
 
 // NHẬP TT SINH VIÊN
 const student=[];
@@ -108,9 +108,14 @@ sorted.addEventListener('click',function(){
 })
 
 
-// //TÌM NGƯỜI CÓ SỐ TUỔI CAO NHẤT
+//TÌM NGƯỜI CÓ SỐ TUỔI CAO NHẤT
 stHighestAge.addEventListener("click", () => {
-
+    //XÓA DANH SÁCH CŨ
+    let lastChild = table.lastElementChild;
+    while (lastChild) {
+        table.removeChild(lastChild);
+        lastChild = table.lastElementChild;
+    }
     let studentHighestAge = student[0];
     for (let i = 1; i < student.length; i++) {
         if (studentHighestAge.age < student[i].age) {
@@ -127,7 +132,12 @@ stHighestAge.addEventListener("click", () => {
 
 //TÌM NGƯỜI CÓ SỐ ĐIỂM ĐẦU VÀO CAO NHẤT
 stHighestScore.addEventListener("click", () => {
-
+    //XÓA DANH SÁCH CŨ
+    let lastChild = table.lastElementChild;
+    while (lastChild) {
+        table.removeChild(lastChild);
+        lastChild = table.lastElementChild;
+    }
     let studentHighestScore = student[0];
     for (let i = 1; i < student.length; i++) {
         if (studentHighestScore.score < student[i].score) {
@@ -147,7 +157,12 @@ search_name.addEventListener('click',function(){
     input.style.display="";
     input.placeholder='Who do you want to find?'
     input.addEventListener('input',function(event){
-        
+        //XÓA DANH SÁCH CŨ
+        let lastChild = table.lastElementChild;
+        while (lastChild) {
+            table.removeChild(lastChild);
+            lastChild = table.lastElementChild;
+        }
         //LẤY GIÁ TRỊ NHẬP VÀO
         const value=event.target.value;
         console.log(value);
@@ -171,7 +186,12 @@ search_age.addEventListener('click',function(){
     input.style.display="";
     input.placeholder='How old is he/she?'
     input.addEventListener('input',function(event){
-        
+        //XÓA DANH SÁCH CŨ
+        let lastChild = table.lastElementChild;
+        while (lastChild) {
+            table.removeChild(lastChild);
+            lastChild = table.lastElementChild;
+        }
         //LẤY GIÁ TRỊ NHẬP VÀO
         const value=event.target.value;
         console.log(value);
@@ -195,7 +215,12 @@ search_address.addEventListener('click',function(){
     input.style.display="";
     input.placeholder='Where dose he/she live?'
     input.addEventListener('input',function(event){
-        
+        //XÓA DANH SÁCH CŨ
+        let lastChild = table.lastElementChild;
+        while (lastChild) {
+            table.removeChild(lastChild);
+            lastChild = table.lastElementChild;
+        }
         //LẤY GIÁ TRỊ NHẬP VÀO
         const value=event.target.value;
         console.log(value);

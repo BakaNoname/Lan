@@ -92,12 +92,11 @@ input{
     text-align: center;
 }
 
-table {
+table tbody{
     counter-reset: rowNumber;
 }
-table tr:not(:first-child){
+
+table tbody td:first-child::before {
     counter-increment: rowNumber;
-}
-table tr td:first-child::before {
     content: counter(rowNumber);
 }
