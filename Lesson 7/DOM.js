@@ -17,67 +17,67 @@ input.style.display="none";
 
 const table= document.getElementById("stInfo");
 
-// // NHẬP TT SINH VIÊN
-// const student=[];
-// add.addEventListener('click',function(){
-//     const stName= name.value;
-//     const stAge= parseInt(age.value);
-//     const stAddress= address.value;
-//     const stScore= parseInt(score.value);
+// NHẬP TT SINH VIÊN
+const student=[];
+add.addEventListener('click',function(){
+    const stName= name.value;
+    const stAge= parseInt(age.value);
+    const stAddress= address.value;
+    const stScore= parseInt(score.value);
 
-//     student.push({
-//         name: stName,
-//         age: stAge,
-//         address: stAddress,
-//         score: stScore,
-//     });
+    student.push({
+        name: stName,
+        age: stAge,
+        address: stAddress,
+        score: stScore,
+    });
 
-    // //IN RA BẢNG THÔNG TIN
-    // let row=table.insertRow();
-    // let cell1=row.insertCell(0);    
-    // let cell2=row.insertCell(1);    cell2.innerHTML=stName;
-    // let cell3=row.insertCell(2);    cell3.innerHTML=stAge;
-    // let cell4=row.insertCell(3);    cell4.innerHTML=stAddress;
-    // let cell5=row.insertCell(4);    cell5.innerHTML=stScore;
-    // console.log({student});
-// })
+    //IN RA BẢNG THÔNG TIN
+    let row=table.insertRow();
+    let cell1=row.insertCell(0);    
+    let cell2=row.insertCell(1);    cell2.innerHTML=stName;
+    let cell3=row.insertCell(2);    cell3.innerHTML=stAge;
+    let cell4=row.insertCell(3);    cell4.innerHTML=stAddress;
+    let cell5=row.insertCell(4);    cell5.innerHTML=stScore;
+    console.log({student});
+})
 
-const student = [
-    {
-        name: 'a',
-        age: 20,
-        address: 'Hà Nội',
-        location: 'North',
-        score: 25.5,
-    },
-    {
-        name: 'b',
-        age: 20,
-        address: 'Kiên Giang',
-        location: 'South',
-        score: 30,
-    }, {
-        name: 'c',
-        age: 25,
-        address: 'Đà Nẵng',
-        location: 'Central',
-        score: 20,
-    }, {
-        name: 'a',
-        age: 18,
-        address: 'Hà Nội',
-        location: 'North',
-        score: 27,
-    },
-]
-for(let i=0;i<student.length;i++){
-    row=table.insertRow();
-    cell1=row.insertCell(0);    
-    cell2=row.insertCell(1);    cell2.innerHTML=student[i].name;
-    cell3=row.insertCell(2);    cell3.innerHTML=student[i].age;
-    cell4=row.insertCell(3);    cell4.innerHTML=student[i].address;
-    cell5=row.insertCell(4);    cell5.innerHTML=student[i].score;
-}
+// const student = [
+//     {
+//         name: 'a',
+//         age: 20,
+//         address: 'Hà Nội',
+//         location: 'North',
+//         score: 25.5,
+//     },
+//     {
+//         name: 'b',
+//         age: 20,
+//         address: 'Kiên Giang',
+//         location: 'South',
+//         score: 30,
+//     }, {
+//         name: 'c',
+//         age: 25,
+//         address: 'Đà Nẵng',
+//         location: 'Central',
+//         score: 20,
+//     }, {
+//         name: 'a',
+//         age: 18,
+//         address: 'Hà Nội',
+//         location: 'North',
+//         score: 27,
+//     },
+// ]
+// for(let i=0;i<student.length;i++){
+//     row=table.insertRow();
+//     cell1=row.insertCell(0);    
+//     cell2=row.insertCell(1);    cell2.innerHTML=student[i].name;
+//     cell3=row.insertCell(2);    cell3.innerHTML=student[i].age;
+//     cell4=row.insertCell(3);    cell4.innerHTML=student[i].address;
+//     cell5=row.insertCell(4);    cell5.innerHTML=student[i].score;
+// }
 
 //SẮP XẾP THEO CHIỀU GIẢM DẦN CỦA TÊN
 sorted.addEventListener('click',function(){
