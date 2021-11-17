@@ -95,7 +95,7 @@ input{
 table {
     counter-reset: rowNumber;
 }
-table tr {
+table tr:not(:first-child){
     counter-increment: rowNumber;
 }
 table tr td:first-child::before {
