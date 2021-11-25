@@ -55,9 +55,7 @@ const object = (array,container) => {
         postcontainer.innerHTML = `
           <img src="${post.image}" alt="bg" />
           <div class="Post-tag">${post.tag}</div>
-          <div class="Post-des">
-            ${post.description}
-          </div>
+          <div class="Post-des">${post.description}</div>
           <div class="Post-date">${post.date} By ${post.author}</div>
         `;
       }

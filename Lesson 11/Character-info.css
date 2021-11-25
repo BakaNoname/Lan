@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Mulish:wght@300;400;500&family=PT+Sans:wght@400;700&family=PT+Serif:wght@400;700&display=swap');
+
+body{
+    background-color:midnightblue;
+    margin-top: 50px;
+    margin-left: 280px;
+    margin-right: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-family: 'DM Sans',sans-serif;
+    font-size: 50px;
+    color: white;
+}
+
+section{
+    width: 700px;
+    height: 330px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.Info>div{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+div1{
+    margin-right: 10px;
+    font-family: 'DM Sans',sans-serif;
+    font-weight: 700;
+}
+
+img{
+    height: 300px;
+    width: auto;
+}

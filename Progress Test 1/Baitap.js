@@ -2,27 +2,34 @@
 let input1=prompt("Mời nhập chuỗi ký tự bất kỳ");
 console.log("Chuỗi trước khi sắp xếp: ",input1);
 const arr1=[...input1];
-for(let i=0;i<arr1.length-1;i++)
-    for(let j=0;j<arr1.length-2;j++){
-        let temp=arr1[i];
-        arr1[i]=arr1[j];
-        arr1[j]=temp;
+for(let i=0;i<arr1.length/2;i++){
+    let temp=arr1[i];
+    arr1[i]=arr1[arr1.length-(i+1)];
+    arr1[arr1.length-(i+1)]=temp;
 }
 console.log("Chuỗi sau khi sắp xếp: ",arr1.join(''));
 
 //BÀI 2
 let input2=prompt("Mời nhập chuỗi ký tự bất kỳ");
-const arr2=[...input3];
-
+// const arr2=input2[0].toUpperCase() + input2.substring(1,input2.length);
+const arr2= [...input2];
+for(let i= 0;i< arr2.length; i++){
+    if (arr2[i]==='\n'){
+        let changed=arr2[i+1].toUpperCase();
+        arr2.splice(i+1,1);
+        arr2.splice(i+1,0,changed);
+    }
+}
+console.log(arr2.join(''));
 
 //BÀI 3
 let input3=prompt("Mời nhập chuỗi ký tự bất kỳ");
 console.log("Mảng trước khi sắp xếp: ",input3);
 const arr3=[...input3];
 for(let i=0;i<arr3.length;i++)
-    for(let j=0;j<arr3.length;j++){
+    for(let j=i+1;j<arr3.length;j++){
         if(arr3[i]===arr3[j]){
-            arr3.splice([],1);
+            delete arr3[j];
         }
 }
 console.log("Mảng sau khi sắp xếp: ",arr3.join(''));
@@ -80,20 +87,25 @@ let c=parseInt(prompt("Mời nhập năm"));
 if(b===1||b===3||b===5||b===7||b===8||b===10||b===12){
     if(1<=a<=31){
         console.log(`${a}/${b}/${c} là ngày hợp lệ`);
+        let date= new Date(c,b,a);
+        console.log('Ngày tiếp theo là: '+(date.getDate()+1)+'/'+date.getMonth()+'/'+date.getFullYear());
     }
 }
 else if(b===4||b===6||b===9||b===11){
     if(1<=a<=30){
         console.log(`${a}/${b}/${c} là ngày hợp lệ`);
+        console.log('Ngày tiếp theo là: '+(date.getDate()+1)+'/'+date.getMonth()+'/'+date.getFullYear());
     }
 }
 else if(b===2){
     if(1<=a<=29){
         if(c%400===0){
             console.log(`${a}/${b}/${c} là ngày hợp lệ`);
+            console.log('Ngày tiếp theo là: '+(date.getDate()+1)+'/'+date.getMonth()+'/'+date.getFullYear());
         }
         else if(1<=a<=28){
             console.log(`${a}/${b}/${c} là ngày hợp lệ`);
+            console.log('Ngày tiếp theo là: '+(date.getDate()+1)+'/'+date.getMonth()+'/'+date.getFullYear());
         }
         else{
             console.log(`${a}/${b}/${c} là ngày không hợp lệ`);

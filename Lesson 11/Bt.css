@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Mulish:wght@300;400;500&family=PT+Sans:wght@400;700&family=PT+Serif:wght@400;700&display=swap');
+
+body{
+    background-color:midnightblue;
+    margin-top: 50px;
+    margin-left: 280px;
+    margin-right: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-family: 'DM Sans',sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+input{
+    width: 950px;
+    height: 28px;
+    border-radius: 4px;
+}
+
+.Main-content{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.Character-info{
+    margin-bottom: 20px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color:whitesmoke;
+    width: 460px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Name{
+    margin-left: 20px;
+    font-family: 'DM Sans',sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.House{
+    margin-left: 20px;
+    font-family: 'DM Sans',sans-serif;
+}
+
+img{
+    margin-right: 40px;
+    width: auto;
+    height: 100px;
+}
