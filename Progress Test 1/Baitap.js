@@ -84,32 +84,27 @@ console.log({nv_MindX});
 let a=parseInt(prompt("Mời nhập ngày"));
 let b=parseInt(prompt("Mời nhập tháng"));
 let c=parseInt(prompt("Mời nhập năm"));
-if(b===1||b===3||b===5||b===7||b===8||b===10||b===12){
+const date= new Date(c,b-1,a);
+const nextday= new Intl.DateTimeFormat("it-IT").format(new Date(date.getFullYear(),date.getMonth(),date.getDate()+1));
+if(b===1 || b===3 || b===5 || b===7 || b===8 || b===10 || b===12){
     if(1<=a<=31){
         console.log(`${a}/${b}/${c} là ngày hợp lệ`);
-        let date= new Date(c,b,a);
-        console.log('Ngày tiếp theo là: '+(date.getDate()+1)+'/'+date.getMonth()+'/'+date.getFullYear());
+        console.log('Ngày tiếp theo là: '+nextday);
     }
 }
-else if(b===4||b===6||b===9||b===11){
+else if(b===4 || b===6 || b===9 || b===11){
     if(1<=a<=30){
         console.log(`${a}/${b}/${c} là ngày hợp lệ`);
-        console.log('Ngày tiếp theo là: '+(date.getDate()+1)+'/'+date.getMonth()+'/'+date.getFullYear());
+        console.log('Ngày tiếp theo là: '+nextday);
     }
 }
 else if(b===2){
-    if(1<=a<=29){
-        if(c%400===0){
-            console.log(`${a}/${b}/${c} là ngày hợp lệ`);
-            console.log('Ngày tiếp theo là: '+(date.getDate()+1)+'/'+date.getMonth()+'/'+date.getFullYear());
-        }
-        else if(1<=a<=28){
-            console.log(`${a}/${b}/${c} là ngày hợp lệ`);
-            console.log('Ngày tiếp theo là: '+(date.getDate()+1)+'/'+date.getMonth()+'/'+date.getFullYear());
-        }
-        else{
-            console.log(`${a}/${b}/${c} là ngày không hợp lệ`);
-        }
+    if(c%400===0 && 1<=a<=29){
+        console.log(`${a}/${b}/${c} là ngày hợp lệ`);
+        console.log('Ngày tiếp theo là: '+nextday);
+    }
+    else{
+        console.log(`${a}/${b}/${c} là ngày không hợp lệ`);
     }
 }
 else{
