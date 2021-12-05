@@ -1,62 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
 
-.container{
-    max-width: 1320px;
-    margin: auto;
-}
-
-.row{
-    display: flex;
-    padding-right: calc(var(--bs-gutter-x)/ 2);
-    padding-left: calc(var(--bs-gutter-x)/ 2);
-    margin-top: var(--bs-gutter-y);
-}
-
-.col-2{
-    width: 16.6%;
-    flex: 0 0 auto;
-}
-
-.col-3{
-    width: 25%;
-    flex: 0 0 auto;
-}
-
-.col-4{
-    width: 33.3%;
-    flex: 0 0 auto;
-}
-
-.col-12{
-    width: 100% !important;
-    flex: 0 0 auto;
-}
-
-ul li {
-    margin: 0 12px;
-    display: inline-block;
-    position: relative;
-    list-style: none;
-    text-align: -webkit-match-parent;
-}
-
-li a {
-    color: #4d312c;
-    font-weight: 600;
-    padding: 15px 5px;
-    display: block;
-    font-size: 16px;
-    -webkit-transition: all .3s ease-out 0s;
-    -moz-transition: all .3s ease-out 0s;
-    -ms-transition: all .3s ease-out 0s;
-    -o-transition: all .3s ease-out 0s;
-    transition: all .3s ease-out 0s;
-    text-transform: normal;
-    position: relative;
-    text-decoration:none;
-}
-
 body{
     font-family: "Mitr",sans-serif;
 }
@@ -123,7 +67,7 @@ body{
     margin-top: 20px;
     color: white;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
     transition: all .3s ease-out 0s;
 }
 
@@ -152,9 +96,28 @@ body{
     margin-right: 120px;
 }
 
-#Main-content>input{
+#Main-content>.Action{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Main-content>.Action>.Right{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#Main-content>.Action>.Right>div:hover{
+    color: tomato;
+}
+
+#Main-content>.Action>.Search{
+    width: 300px;
     height: 30px;
-    width: 400px;
 }
 
 #Main-content>.Menu{
@@ -203,14 +166,11 @@ body{
 .BannerFooter{
     margin-top: 100px;
     display: flex;
-    width: auto;
-    max-width: 25%;
 }
 
-.location-house .insta-btn i {
-    font-size: 15px;
-    margin-right: 10px;
-    font-weight: 700;
+.BannerFooter>img{
+    width: auto;
+    max-width: 25%;
 }
 
 .Footer{

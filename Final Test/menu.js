@@ -68,6 +68,14 @@ const object=(array,info) => {
     else{
         list.style.width= 'auto';
     }
+
+    // //STYLE CHO 0 SP
+    // if(count===0){
+    //     const image= document.createElement('img');
+    //     image.src= './OOPS.png';
+    //     list.appendChild(image);
+    //     list.style.='center';
+    // }
 }
 
 //TẠO EVENT TÌM KIẾM
