@@ -1,45 +1,52 @@
 const menu=[
     {
-        image: './Food1.jpg',
-        type: 'Sandwich',
+        type: 'Breakfast',
+        image: './asset/img/1.png',
+        name: 'Sandwich',
         describe:'Making a reservation at Délicious restaurant is easy and',
-        link: './Food1.html',
+        link: '#',
     },
     {
-        image: './Food2.jpg',
-        type: 'Tuna Steak',
+        type: 'Dinner',
+        image: './asset/img/1.png',
+        name: 'Tuna Steak',
         describe:'Making a reservation at Délicious restaurant is easy and',
-        link: './Food2.html',
+        link: '#',
     },
     {
-        image: './Food3.jpg',
-        type: 'Hamburger',
+        type: 'Lunches',
+        image: './asset/img/1.png',
+        name: 'Hamburger',
         describe:'Making a reservation at Délicious restaurant is easy and',
-        link: './Food3.html',
+        link: '#',
     },
     {
-        image: './Food2.jpg',
-        type: 'Hamburger',
+        type: 'Fastfood',
+        image: './asset/img/1.png',
+        name: 'Hamburger',
         describe:'Making a reservation at Délicious restaurant is easy and',
-        link: './Food4.html',
+        link: '#',
     },
     {
-        image: './Food1.jpg',
-        type: 'Tuna Sandwich',
+        type: 'Breakfast',
+        image: './asset/img/1.png',
+        name: 'Tuna Sandwich',
         describe:'Making a reservation at Délicious restaurant is easy and',
-        link: './Food5.html',
+        link: '#',
     },
     {
-        image: './Food3.jpg',
-        type: 'Cheese Burger',
+        type: 'Lunches',
+        image: './asset/img/1.png',
+        name: 'Cheese Burger',
         describe:'Making a reservation at Délicious restaurant is easy and',
-        link: './Food6.html',
+        link: '#',
     },
     {
-        image: './Food1.jpg',
-        type: 'Hot Dog',
+        type: 'Fastfood',
+        image: './asset/img/1.png',
+        name: 'Hot Dog',
         describe:'Making a reservation at Délicious restaurant is easy and',
-        link: './Food7.html',
+        link: '#',
     },
 ]
 
@@ -54,13 +61,13 @@ const object=(array,info) => {
         //IN RA DANH SÁCH MỚI
         menu_info.innerHTML=`
             <img src="${menus.image}" alt="">
-            <div class="Type">${menus.type}</div>
+            <div class="Name">${menus.name}</div>
             <div class="Describe">${menus.describe}</div>
-            <a href="${menus.link}">Order Now</a>
+            <a style="text-decoration: none;" href="${menus.link}">Order Now</a>
         `;
     }
 
-    //STYLE CHO 2 SP DUY NHẤT
+    //STYLE
     const count= list.childElementCount;
     if(count===2){
         list.style.width= '800px';
@@ -68,14 +75,6 @@ const object=(array,info) => {
     else{
         list.style.width= 'auto';
     }
-
-    // //STYLE CHO 0 SP
-    // if(count===0){
-    //     const image= document.createElement('img');
-    //     image.src= './OOPS.png';
-    //     list.appendChild(image);
-    //     list.style.='center';
-    // }
 }
 
 //TẠO EVENT TÌM KIẾM
@@ -91,8 +90,9 @@ input.addEventListener('input',(event) => {
     
     //LẤY GIÁ TRỊ INPUT VÀ SO SÁNH VỚI DANH SÁCH
     const value= event.target.value.toLowerCase();
-    const temp= [...menu].filter((menus) => menus.type.toLowerCase().includes(value));
+    const temp= [...menu].filter((menus) => menus.name.toLowerCase().includes(value));
     
     //IN RA DANH SÁCH MỚI
     object(temp,list);
 })
+
