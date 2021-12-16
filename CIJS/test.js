@@ -42,7 +42,6 @@ const input2=[
 
 function alternatingSums(a) {
     const arr= a;
-    // let temp= [];
     let sumteam1= 0;
     let sumteam2= 0;
     for(let i=0; i<arr.length; i++){
