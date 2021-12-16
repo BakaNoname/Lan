@@ -29,10 +29,12 @@ const changed= document.getElementById('change-color');
 const copy= document.querySelector('.action');
 const body= document.querySelector('body');
 
+//COPY MÃ MÀU
 copy.addEventListener('click',() => {
     
 })
 
+//ĐỔI MÀU BACKGROUND
 changed.addEventListener('change', () => {
     for(let i=0; i<colors.length; i++){
         if(changed.value==colors[i].value){
